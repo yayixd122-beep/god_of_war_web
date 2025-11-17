@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("img/Kratos.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+}
+
+/* NAV */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: rgba(120, 0, 0, 0.6);
+    border: 1px solid rgba(255, 200, 0, 0.3);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+nav a.activo {
+    background: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+/* CONTENEDOR */
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(255, 40, 0, 0.6);
+}
+
+/* TÍTULOS */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ffd45e;
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px #000;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #c02b2b;
+    font-size: 24px;
+    margin: 10px 0 40px 0;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px #000;
+}
+
+/* BLOQUE DE CRONOLOGÍA */
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.bloque .imagen img {
+    width: 420px;      /* tamaño fijo grande */
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(255, 40, 0, 0.8);
+    transition: 0.25s;
+}
+
+
+.bloque .imagen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,40,0,0.8);
+}
+
+.bloque .texto {
+    width: 60%;
+}
+
+.bloque h2 {
+    font-size: 30px;
+    color: #ffd45e;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000;
+}
+
+.bloque p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* REFERENCIAS */
+.referencias {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(255,40,0,0.6);
+}
+
+.referencias h2 {
+    text-align: center;
+    color: #ffd45e;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.referencias ol {
+    margin-left: 25px;
+}
+
+.referencias li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* BOTONES */
+.btn-regresar,
+.btn-siguiente {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #f5c000;
+    background: rgba(0,0,0,0.8);
+    transition: 0.25s;
+}
+
+.btn-regresar:hover,
+.btn-siguiente:hover {
+    background: #d10000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.btn-regresar { float: left; }
+.btn-siguiente { float: right; }
+
+/* ===== EVOLUCIÓN DEL COMBATE ===== */
+
+.evolucion-combate {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(255, 40, 0, 0.6);
+}
+
+.evolucion-combate h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffd45e;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #000;
+}
+
+.evolucion-combate p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.evolucion-combate table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.evolucion-combate th,
+.evolucion-combate td {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 12px;
+    vertical-align: top;
+}
+
+.evolucion-combate th {
+    background: rgba(255, 212, 94, 0.12);
+    color: #ffd45e;
+    text-align: left;
+}
+
+.evolucion-combate tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+}
+
+.evolucion-combate tr:hover {
+    background: rgba(255, 40, 0, 0.15);
+}
+
+/* ===== MÚSICA DE LA SAGA ===== */
+
+.musica-saga {
+    margin-top: 35px;
+    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(255,40,0,0.6);
+}
+
+.musica-saga h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffd45e;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #000;
+}
+
+.musica-saga p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.tema-musical {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+.tema-musical h3 {
+    font-size: 20px;
+    color: #ffd45e;
+    margin-bottom: 5px;
+}
+
+.tema-musical p {
+    margin-bottom: 8px;
+}
+
+.tema-musical audio {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    filter: drop-shadow(0 0 10px #ff0000c5);
+    border-radius: 8px;
+}
+
+.video-final {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,40,0,0.7);
+}
+
+.video-final h2 {
+    text-align: center;
+    color: #ffd45e;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #000;
+}
+
+/* CONTENEDOR RESPONSIVE PARA YOUTUBE */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* relación 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.9);
+}
+
+.descripcion-video {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #fff;
+}

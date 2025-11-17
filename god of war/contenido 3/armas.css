@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("img/Kratos.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: rgba(120, 0, 0, 0.6);
+    border: 1px solid rgba(255, 200, 0, 0.3);
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+nav a.activo {
+    background: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 40px auto;
+    background: rgba(0, 0, 0, 0.78);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(255, 40, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ffd45e;
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px #000;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #c02b2b;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 8px;
+    text-shadow: 0 0 8px #000;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* ===== GALERÍA 2xN ===== */
+
+.galeria-armas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.arma {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+}
+
+.arma .imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.arma img {
+    max-width: 80%;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+/* efecto hover en imagen */
+.arma img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255, 40, 0, 0.9);
+    filter: brightness(115%);
+}
+
+.arma .info h3 {
+    font-size: 22px;
+    color: #ffd45e;
+    margin-bottom: 8px;
+}
+
+.arma .info p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ===== REFERENCIAS ===== */
+
+.referencias {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(255, 40, 0, 0.6);
+}
+
+.referencias h2 {
+    text-align: center;
+    color: #ffd45e;
+    font-size: 26px;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #000;
+}
+
+.referencias ol {
+    margin-left: 25px;
+}
+
+.referencias li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.referencias li::marker {
+    color: #ffcc33;
+    font-weight: bold;
+}
+
+/* ===== BOTONES SIGUIENTE / REGRESAR ===== */
+
+.btn-regresar,
+.btn-siguiente {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #f5c000;
+    background: rgba(0,0,0,0.8);
+    transition: 0.25s;
+}
+
+.btn-regresar:hover,
+.btn-siguiente:hover {
+    background: #d10000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.btn-regresar {
+    float: left;
+}
+
+.btn-siguiente {
+    float: right;
+}
+ 
+/* ===== VIDEO FINAL ===== */
+
+.video-final {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(255, 40, 0, 0.6);
+}
+
+.video-final .titulo-video {
+    text-align: center;
+    font-size: 30px;
+    color: #ffd45e;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #000;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.video-container video {
+    width: 90%;
+    max-width: 850px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+.descripcion-video {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 10px;
+}

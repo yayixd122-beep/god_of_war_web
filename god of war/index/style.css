@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url("img/Kratos.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+}
+
+/* ====== HEADER Y MENÚ ====== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    max-width: 600px;
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap:wrap
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1px solid rgba(245, 53, 0, 0.4);
+    transition: 0.2s;
+    font-size: 15px;
+    background: rgba(173, 11, 11, 0.45);
+}
+
+nav a:hover {
+    border-color: #f55200;
+    background: rgb(194, 17, 17);
+}
+
+nav a.activo {
+    background: #ffffffa9;
+    color: #111;
+    font-weight: bold;
+}
+
+/* ====== CONTENEDOR GENERAL ====== */
+.main-container {
+    width: 90%;text-align: ;
+    max-width: 1300px;
+    padding: 40px;
+    
+
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 200px;
+
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 40px rgba(73, 43, 17, 0.8);
+
+    backdrop-filter: blur(3px);
+
+    margin: 140px auto 40px;
+}
+
+/* ====== TEXTOS GENERALES ====== */
+h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #ffe733;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 25px #ff0400;
+    text-transform: initial;
+}
+
+h2 {
+    margin: 30px 0 30px;
+    font-size: 30px;
+    color: #ffd966;
+    text-shadow: 0 0 8px rgb(18, 18, 18);
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* ====== ESTILO ESPECIAL PARA EL INICIO ====== */
+
+.subtitulo {
+    text-align: center;
+    font-size: 30px;
+    color: #c02b2b;
+    letter-spacing: 13px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px black;
+}
+
+.datos {
+    font-size: 22px;
+    line-height: 2.2;
+    margin-top: 18px;
+}
+
+.datos p strong {
+    color: #ffcc33;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.ciudad {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    letter-spacing: 12px;
+}
+
+/* Botón "Siguiente" estilo God of War */
+.btn-siguiente {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 35px;
+    border-radius: 30px;
+    border: 2px solid #f5c000;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+
+    float: right;
+    transition: 0.25s;
+}
+
+.btn-siguiente:hover {
+    background: #f50000a9;
+    color: #ffffff;
+    box-shadow: 0 0 20px #ea0000ac;
+    transform: translateY(-2px);
+}
+
+
+.fila-datos-audio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+}
+
+.audio-box {
+    flex: 0 0 260px;   
+    padding: 16px 20px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(80, 0, 0, 0.85)
+    );
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+
+    box-shadow: 0 0 20px #ff000090;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    margin-top: 20px;  
+}
+
+.audio-gow {
+    width: 100%;
+    accent-color: #ffcc33;
+    background: #111;
+    padding: 4px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 6px #000);
+}
